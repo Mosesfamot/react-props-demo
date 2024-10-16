@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --font-family: apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 
+  'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  box-sizing: border-box;
+}
+
+body {
+  background: #efefef;
+}
+
+.contact-section {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  width: 16rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+}
+
+.card-image {
+  border: 1px solid #000;
+  margin: 1rem auto;
+  width: 14rem;
+  height: 10rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  font-size: 1.6rem;
+  margin: 0 0 1rem 1rem;
+}
+
+p {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.icon {
+  width: 1rem;
+}
