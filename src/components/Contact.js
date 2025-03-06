@@ -1,5 +1,4 @@
 import React from 'react';
-// import ContactImage from '../images/contact-img.png';
 
 export default function Contact(props) {
     return (

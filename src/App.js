@@ -1,10 +1,22 @@
 import React from "react";
 import Contact from './components/Contact';
+import Joke from './components/Joke';
+import jokesData from './components/jokesData';
 import './styles.css';
 
 export default function App() {
+  
+  const jokeElements = jokesData.map(joke => {
+    return <Joke setup={joke.setup} punchline={joke.punchline} />
+  })
+
+
   return (
     <section>
+      <article>
+        {jokeElements}
+      </article>
+      
       <Contact 
         img={require('./images/contact-img.png')}
         name="Mr. Samson"
@@ -22,12 +34,6 @@ export default function App() {
         name="Mr. Jackson"
         phone="(234) 511-0000"
         email="mr.jackrobinson@contact.com"
-      />
-      <Contact 
-        img={require('./images/contact-img.png')}
-        name="Mr. Richard"
-        phone="(234) 123-7782"
-        email="mr.richarddickson@contact.com"
       />
     </section>
   )
